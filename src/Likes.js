@@ -4,7 +4,7 @@ function Likes(props) {
   console.log(props);
   return (
     <div className="button-controls">
-      <button>🖤 {props.like}</button>
+      <button>🖤 {props.likes}</button>
       <button>Dislike</button>
     </div>
   );
@@ -13,7 +13,7 @@ function Likes(props) {
 function mapStateToProps(state) {
   console.log("mapStateToProps >", state);
   return {
-    likes: state.lakes
+    likes: state.likes
   }
 }
 
